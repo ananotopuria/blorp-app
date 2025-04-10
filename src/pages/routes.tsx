@@ -4,6 +4,7 @@ import DownloadPage from "./downloadPage";
 import HomePage from "./homePage";
 import NotFoundPage from "./notFoundPage";
 import LoginPage from "./loginPage";
+import CreatePage from "./createPage";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/download",
         element: <DownloadPage />,
+      },
+      {
+        path: "/create",
+        element: <CreatePage />,
       },
       {
         path: "/login",
