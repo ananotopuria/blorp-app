@@ -1,6 +1,9 @@
 import { useState } from "react";
 import redBlorp from "./../../assets/749a6e0c-bc3e-4aeb-af11-d17413fd9b10.png";
 import greenBlorp from "./../../assets/d1e4ccd9-10ac-4f67-a1f0-07915b56d46f.png";
+import baby from "./../../assets/unnamed12.png";
+import grandfa from "./../../assets/unnamed.png"
+
 function CreatePageComponents() {
   const [title, setTitle] = useState("");
   const [subtext, setSubtext] = useState("");
@@ -55,6 +58,26 @@ function CreatePageComponents() {
                 : "border-transparent"
             }`}
             onClick={() => setSelectedImg(greenBlorp)}
+          />
+          <img
+            src={baby}
+            alt="Skull"
+            className={`w-16 h-16 cursor-pointer border-2 rounded ${
+              selectedImg === baby
+                ? "border-red-500"
+                : "border-transparent"
+            }`}
+            onClick={() => setSelectedImg(baby)}
+          />
+          <img
+            src={grandfa}
+            alt="Skull"
+            className={`w-16 h-16 cursor-pointer border-2 rounded ${
+              selectedImg === grandfa
+                ? "border-red-500"
+                : "border-transparent"
+            }`}
+            onClick={() => setSelectedImg(grandfa)}
           />
         </div>
         <button
