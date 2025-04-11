@@ -6,23 +6,25 @@ function HomePageComponents() {
   const [content] = useState(() => getRandomContent());
 
   return (
-    <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white flex flex-col items-center justify-center p-6">
-      <h1 className="text-3xl font-bold mb-4">{content.title}</h1>
+    <div className="min-h-screen bg-white text-grey dark:bg-blackish dark:text-lavender flex flex-col items-center justify-center p-6">
+      <h1 className="text-5xl font-bold mb-6 text-blueViolet dark:text-brightLavender">
+        {content.title}
+      </h1>
 
-      <p className="text-lg text-gray-700 dark:text-gray-400 mb-6 max-w-md text-center">
+      <p className="text-2xl mb-8 max-w-xl text-center text-lightGrey dark:text-lighterGrey">
         {content.description}
       </p>
 
       <Link
         to="/downloads"
-        className="mb-4 text-blue-600 dark:text-blue-400 underline"
+        className="mb-5 text-[2rem] text-red dark:text-green underline font-semibold"
       >
         Go to Downloads
       </Link>
 
       <Link
         to="/login"
-        className="text-sm text-gray-600 dark:text-gray-400 underline"
+        className="text-base text-darkerGrey dark:text-gainsboro underline"
       >
         Login to unlock more features
       </Link>

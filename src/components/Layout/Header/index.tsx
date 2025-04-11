@@ -11,15 +11,17 @@ function Header() {
   const handleCloseMenu = () => setMenuOpen(false);
 
   return (
-    <header className="relative flex justify-between items-center px-4 py-3 bg-white dark:bg-zinc-900 text-black dark:text-white shadow-md">
-      <div className="flex items-center gap-2">
-        <img src={Logo} alt="blorp logo" className="w-10 h-10" />
-        <p className="text-[2rem] font-fixedsys">Blorp</p>
+    <header className="relative flex justify-between items-center px-4 py-3 bg-white dark:bg-blackish text-grey dark:text-lavender shadow-md">
+      <div className="flex items-center gap-2 px-[2rem]">
+        <img src={Logo} alt="blorp logo" className="w-[6rem] h-[6rem]" />
+        <p className="text-[3rem] text-blueViolet dark:text-brightLavender">
+          Blorp
+        </p>
       </div>
       <div className="hidden md:flex">
         <Nav isOpen={true} onClick={handleCloseMenu} />
       </div>
-      <button onClick={toggleTheme} className="text-xl">
+      <button onClick={toggleTheme} className="text-[3rem] px-[2rem]">
         {theme === "dark" ? "☀️" : "🌙"}
       </button>
 

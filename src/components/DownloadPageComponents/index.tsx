@@ -11,10 +11,12 @@ function DownloadPage() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-white dark:bg-zinc-900 text-black dark:text-white">
-      <h1 className="text-3xl font-bold mb-6">Download the Desktop App</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 bg-white text-grey dark:bg-blackish dark:text-lavender">
+      <h1 className="text-5xl font-bold mb-8 text-blueViolet dark:text-brightLavender text-center">
+        Download the Desktop App
+      </h1>
 
-      <p className="mb-8 text-center max-w-md text-gray-700 dark:text-gray-300">
+      <p className="text-xl mb-10 text-center max-w-xl text-lightGrey dark:text-lighterGrey">
         This app simulates phishing experiences. Download it to continue.
       </p>
 
@@ -22,7 +24,7 @@ function DownloadPage() {
         <a
           href="/downloads/blorp-windows.exe"
           download
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded text-center"
+          className="bg-blueViolet hover:bg-brightLavender text-white dark:text-black text-lg font-semibold px-8 py-4 rounded-lg transition duration-200"
         >
           ⬇ Download for Windows
         </a>
@@ -32,29 +34,29 @@ function DownloadPage() {
         <a
           href="/downloads/blorp-mac.dmg"
           download
-          className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded text-center"
+          className="bg-green hover:bg-yellow text-black text-lg font-semibold px-8 py-4 rounded-lg transition duration-200"
         >
           ⬇ Download for macOS
         </a>
       )}
 
       {userOS === "unknown" && (
-        <div className="flex flex-col gap-4 items-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+        <div className="flex flex-col gap-5 items-center">
+          <p className="text-base text-darkerGrey dark:text-gainsboro">
             We couldn't detect your OS. Choose manually:
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-6">
             <a
               href="/downloads/blorp-windows.exe"
               download
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+              className="bg-blueViolet hover:bg-brightLavender text-white dark:text-black text-base font-semibold px-6 py-3 rounded-lg"
             >
               Windows
             </a>
             <a
               href="/downloads/blorp-mac.dmg"
               download
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+              className="bg-green hover:bg-yellow text-black text-base font-semibold px-6 py-3 rounded-lg"
             >
               macOS
             </a>
