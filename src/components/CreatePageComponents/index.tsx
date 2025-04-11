@@ -16,7 +16,9 @@ function CreatePageComponents() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-white dark:bg-zinc-900 text-black dark:text-white">
-      <h1 className="text-3xl font-bold mb-6 text-center">Create Your Virus</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">
+        Create Your Custom Virus
+      </h1>
 
       <form
         onSubmit={handleGenerate}
@@ -29,10 +31,9 @@ function CreatePageComponents() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <input
-          type="text"
+        <textarea
           placeholder="Enter subtext"
-          className="p-2 rounded border bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700"
+          className="p-2 rounded border bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 resize-none h-32"
           value={subtext}
           onChange={(e) => setSubtext(e.target.value)}
         />
