@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "fixedsys";
-  src: url("./src/assets/fonts/fixedsys.ttf") format("truetype");
+  src: url("/fonts/fixedsys.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -20,5 +20,5 @@ html {
 }
 
 body {
-    font-family: fixedsys, sans-serif;
-  }
+  font-family: fixedsys, sans-serif;
+}

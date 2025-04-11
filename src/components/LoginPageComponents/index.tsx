@@ -15,11 +15,10 @@ function LoginPageComponents() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center mt-[10rem] xl:mt-[20rem] bg-white dark:bg-blackish text-grey dark:text-lavender px-6">
+    <div className="min-h-screen flex flex-col items-center pt-[10rem] xl:pt-[20rem] bg-white dark:bg-blackish text-grey dark:text-lavender px-6">
       <h1 className="text-5xl font-extrabold mb-12 text-blueViolet dark:text-brightLavender">
         Login
       </h1>
-
       <form
         onSubmit={handleLogin}
         className="w-full max-w-lg flex flex-col gap-8"
