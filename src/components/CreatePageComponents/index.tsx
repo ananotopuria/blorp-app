@@ -18,25 +18,25 @@ function CreatePageComponents() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center mt-[10rem] xl:md-[20rem] px-6 bg-white text-grey dark:bg-blackish dark:text-lavender">
-      <h1 className="text-5xl font-bold mb-8 text-blueViolet dark:text-brightLavender text-center">
+    <div className="min-h-screen flex flex-col items-center pt-[10rem] xl:md-[20rem] px-6 bg-white text-grey dark:bg-blackish dark:text-lavender">
+      <h1 className="text-[3rem] lg:text-[5rem] font-bold mb-8 text-blueViolet dark:text-brightLavender text-center">
         Create Your Custom Virus
       </h1>
 
       <form
         onSubmit={handleGenerate}
-        className="w-full max-w-xl flex flex-col gap-5"
+        className="w-full max-w-xl lg:max-w-[50rem] flex flex-col gap-5"
       >
         <input
           type="text"
           placeholder="Enter virus title"
-          className="p-3 text-lg rounded border bg-gainsboro dark:bg-darkGrey dark:border-lighterGrey"
+          className="p-3 text-[1.6rem] lg:text-[2rem] rounded border bg-gainsboro dark:bg-darkGrey dark:border-lighterGrey"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <textarea
           placeholder="Enter subtext"
-          className="p-3 text-lg rounded border bg-gainsboro dark:bg-darkGrey dark:border-lighterGrey resize-none h-36"
+          className="p-3 text-[1.6rem] lg:text-[2rem] rounded border bg-gainsboro dark:bg-darkGrey dark:border-lighterGrey resize-none h-36"
           value={subtext}
           onChange={(e) => setSubtext(e.target.value)}
         />
@@ -46,7 +46,7 @@ function CreatePageComponents() {
               key={idx}
               src={img}
               alt={`Option ${idx + 1}`}
-              className={`w-20 h-20 cursor-pointer border-4 rounded-xl transition-all duration-150 ${
+              className={`w-20 h-20 xl:w-[10rem] xl:h-[10rem] cursor-pointer border-4 rounded-xl transition-all duration-150 ${
                 selectedImg === img ? "border-red" : "border-transparent"
               }`}
               onClick={() => setSelectedImg(img)}
@@ -55,7 +55,7 @@ function CreatePageComponents() {
         </div>
         <button
           type="submit"
-          className="bg-red hover:bg-pink text-white font-semibold py-3 text-lg rounded-lg transition duration-200"
+          className="bg-red hover:bg-pink text-white font-semibold py-3 text-lg lg:text-[1.8rem] rounded-lg transition duration-200"
         >
           Get Link
         </button>

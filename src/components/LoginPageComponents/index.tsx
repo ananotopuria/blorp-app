@@ -16,7 +16,7 @@ function LoginPageComponents() {
 
   return (
     <div className="min-h-screen flex flex-col items-center pt-[10rem] xl:pt-[20rem] bg-white dark:bg-blackish text-grey dark:text-lavender px-6">
-      <h1 className="text-5xl font-extrabold mb-12 text-blueViolet dark:text-brightLavender">
+      <h1 className="text-[3rem] lg:text-[5rem] font-extrabold mb-12 text-blueViolet dark:text-brightLavender">
         Login
       </h1>
       <form
@@ -39,7 +39,7 @@ function LoginPageComponents() {
         />
         <button
           type="submit"
-          className="bg-blueViolet hover:bg-brightLavender text-white dark:text-black text-xl font-bold py-4 rounded-xl transition duration-200"
+          className="bg-blueViolet hover:bg-brightLavender text-white dark:text-white text-[1.6rem] lg:text-[2rem] font-bold py-4 rounded-xl transition duration-200"
         >
           Login
         </button>

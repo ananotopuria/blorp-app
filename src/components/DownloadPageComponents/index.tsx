@@ -11,12 +11,12 @@ function DownloadPage() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 bg-white text-grey dark:bg-blackish dark:text-lavender">
-      <h1 className="text-5xl font-bold mb-8 text-blueViolet dark:text-brightLavender text-center">
+    <div className="min-h-screen flex flex-col items-center justify-start  pt-[20rem] px-6 bg-white text-grey dark:bg-blackish dark:text-lavender">
+      <h1 className="text-[3rem] lg:text-[5rem] font-bold mb-8 text-blueViolet dark:text-brightLavender text-center">
         Download the Desktop App
       </h1>
 
-      <p className="text-xl mb-10 text-center max-w-xl text-lightGrey dark:text-lighterGrey">
+      <p className="text-[1.6rem] lg:text-[1.8rem] mb-10 text-center max-w-xl text-lightGrey dark:text-lighterGrey">
         This app simulates phishing experiences. Download it to continue.
       </p>
 
